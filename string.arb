@@ -1,19 +1,18 @@
-
-nome = "Gilson dourado"
-mensagem =%q(Benvindo ao programa Ruby)
+nome = 'Gilson dourado'
+mensagem = 'Benvindo ao programa Ruby'
 puts mensagem
-#q minúsculo não faz intrepolação
-#*******************************************************************
+# q minúsculo não faz intrepolação
+# *******************************************************************
 
 mensagem = %q(Benvindo ao programaa ruby #{nome})
 puts mensagem
 
 # interpolação usando o %Q maiúsculo
-mensagem = %Q(Benvindo ao programa ruby #{nome})
+mensagem = %(Benvindo ao programa ruby #{nome})
 puts mensagem
-#************************************************
-# como visualizar todos os métodos públicos que a string tem 
+# ************************************************
+# como visualizar todos os métodos públicos que a string tem
 puts mensagem.public_methods
 puts mensagem
-#*********************************************************************
+# *********************************************************************
 puts mensagem.length
