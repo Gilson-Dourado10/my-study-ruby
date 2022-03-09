@@ -1,24 +1,27 @@
-#Input : arr[] = {10, 20, 80, 30, 60, 50, 
-#110, 100, 130, 170}
-#x = 110;
-#Output : 6
-#Element x is present at index 6
+# Input : arr[] = {10, 20, 80, 30, 60, 50,
+# 110, 100, 130, 170}
+# x = 110;
+# Output : 6
+# Element x is present at index 6
 
-#Input : arr[] = {10, 20, 80, 30, 60, 50, 
+# Input : arr[] = {10, 20, 80, 30, 60, 50,
 #           110, 100, 130, 170}
- #x = 175;
-#Output : -1
-#Element x is not present in arr[].
-def input
-arr [] = {10, 20, 80, 30, 60 ,50, 110, 100, 130, 170}
+# x = 175;
+# Output : -1
+# Element x is not present in arr[].
 
-i = 0 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                i = 0 
-while i < arr.size
- return n if arr [i] == n
-i += 1
-end
-false
-end
-p input
+class Array
+  def linear_search(targeted_values)
+    i = 0
+    while i < length
+      return i if self [i] == targeted_values
 
+      i += 1
+    end
+    "not found"
+  end
+end
+array = [10, 20, 80, 30, 60, 50,  110, 100, 130, 170]
+targeted_values = [110]
+returned_indexes = targeted_values.map { |i| array.linear_search(i) }.join(',')
+puts "the targeted values #{targeted_values} are found in the indexes: #{returned_indexes};respectively."
