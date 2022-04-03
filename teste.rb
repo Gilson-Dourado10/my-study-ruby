@@ -1,6 +1,24 @@
-def 
-    hello 'bom dia '
-        
+def  hello
+    puts  'Olá Gilson Dourado'
 end
-    puts hello
+hello
+def  hello
+    puts  'Olá Gilson Dourado'
 end
+hello
+def  hello
+    puts  'Olá Gilson Dourado'
+end
+hello
+def  hello
+    puts  'Olá Gilson Dourado'
+end
+hello
+def  hello
+    puts  'Olá Gilson Dourado'
+end
+hello
+def hello
+    puts "meu grande amor "
+end
+
