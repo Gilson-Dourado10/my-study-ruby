@@ -1,24 +1,4 @@
-def  hello
-    puts  'Olá Gilson Dourado'
+def  helloword
+    puts "olá gilson, tudo bem? "
 end
-hello
-def  hello
-    puts  'Olá Gilson Dourado'
-end
-hello
-def  hello
-    puts  'Olá Gilson Dourado'
-end
-hello
-def  hello
-    puts  'Olá Gilson Dourado'
-end
-hello
-def  hello
-    puts  'Olá Gilson Dourado'
-end
-hello
-def hello
-    puts "meu grande amor "
-end
-
+helloword
