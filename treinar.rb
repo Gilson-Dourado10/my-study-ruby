@@ -1,15 +1,8 @@
 
-
-var1 = 'pare'
-var2 = 'radar'
-var3 = 'vc consegue pronunciar esta frase ao contrario'
-puts var1.reverse
-puts var2.reverse
-puts var3.reverse
-puts var1
-puts var2
-puts var3
-
-puts 'qual o seu nome completo'
-nome= gets.chomp
-puts 'vc sabia que o seu nome possui ' + nome.length.to_s + ' caracteres,'+ nome+ '?'
+letras = 'abCD'
+puts letras.upcase + '  todas as letras minúsculas para maúisculas'
+puts letras.downcase  + '  todas letras minúsculas para maiúsculas'
+puts letras.swapcase + '  inverte toda caixa de texto o que maiúscula fica minúscula e vice-versa'
+puts letras.capitalize + '  igual ao dowcase troca minúscula para maiúscula'
+puts 'A'.capitalize + '  minúscula para maiúscula'
+puts letras
