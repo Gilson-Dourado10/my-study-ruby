@@ -1,11 +1,15 @@
 
-puts 'ola, qual seu nome ?'
-nome = gets
-puts 'seu nome é ' + nome+ 'que nome  bonito!!!'
-puts ' prazer em conhece-lo, ' + nome +'.  :)'
 
-puts 'olá, qual o seu nome?'
+var1 = 'pare'
+var2 = 'radar'
+var3 = 'vc consegue pronunciar esta frase ao contrario'
+puts var1.reverse
+puts var2.reverse
+puts var3.reverse
+puts var1
+puts var2
+puts var3
+
+puts 'qual o seu nome completo'
 nome= gets.chomp
-puts 'seu nome é ' + nome + ' que nome bonito!!!'
-puts 'prazer em conhece-lo,' + nome+'. :)'
-
+puts 'vc sabia que o seu nome possui ' + nome.length.to_s + ' caracteres,'+ nome+ '?'
