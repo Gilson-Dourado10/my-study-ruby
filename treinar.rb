@@ -6,3 +6,18 @@ puts letras.swapcase + '  inverte toda caixa de texto o que maiúscula fica min�
 puts letras.capitalize + '  igual ao dowcase troca minúscula para maiúscula'
 puts 'A'.capitalize + '  minúscula para maiúscula'
 puts letras
+
+
+letras = 'BCGH'
+puts letras.upcase + ' todas as letras mínúsculas para mauiculas'
+puts letras.downcase + ' todas as letras minúsculas para  maiúsculas'
+
+
+
+
+
+
+
+
+
+
