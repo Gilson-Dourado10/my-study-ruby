@@ -1,18 +1,19 @@
 
-letras = 'abCD'
-puts letras.upcase + '  todas as letras minúsculas para maúisculas'
-puts letras.downcase  + '  todas letras minúsculas para maiúsculas'
-puts letras.swapcase + '  inverte toda caixa de texto o que maiúscula fica minúscula e vice-versa'
-puts letras.capitalize + '  igual ao dowcase troca minúscula para maiúscula'
-puts 'A'.capitalize + '  minúscula para maiúscula'
-puts letras
+larguraDaLinha = 50
+puts(                'Old Mother Hubbard'.center(larguraDaLinha))
+puts(               'Sat in her cupboard'.center(larguraDaLinha))
+puts(         'Eating her curds an whey,'.center(larguraDaLinha))
+puts(          'When along came a spider'.center(larguraDaLinha))
+puts(         'Which sat down beside her'.center(larguraDaLinha))
+puts('And scared her poor shoe dog away.'.center(larguraDaLinha))
 
-
-letras = 'BCGH'
-puts letras.upcase + ' todas as letras mínúsculas para mauiculas'
-puts letras.downcase + ' todas as letras minúsculas para  maiúsculas'
-
-
+larguraDaLinha = 10
+puts(                'VELHA mãe América'.center(larguraDaLinha))
+puts ('           SENTOU-SE em seu banco'.center(larguraDaLinha))
+puts ('     PARA comer sua coalhadada e  soro de leite'.center(larguraDaLinha))
+puts('           QUANDO veio uma aranha '.center(larguraDaLinha))
+puts ('  QUE sentou ao lado dela '.center(larguraDaLinha))
+puts ('E assustou seu pobre cachorro SARDINHA'.center(larguraDaLinha))
 
 
 
