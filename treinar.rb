@@ -1,22 +1,18 @@
+# método Math
 
-srand 17
-puts(rand(100))
-puts(rand(100))
-puts(rand(100))
-puts(rand(100))
-puts(rand(100))
-puts   'repetindo os números aleatórios'
-srand 17
-p rand 100
-puts(rand(100))
-puts(rand(100))
-puts(rand(100))
-puts(rand(100))
+puts(Math::PI)
+puts(Math::E)
+puts(Math.cos(Math::PI/3))
+puts(Math.tan(Math::PI/4))
+puts(Math.log(Math::E**2))
+puts((1 + Math.sqrt(5))/2)
 
-srand 0
-puts rand 5
-puts rand 5
-p "  "
-srand 0
-p rand 5
-p rand 5
+p Math::PI
+puts (Math.sqrt 16)/2
+
+
+
+
+p Math.exp(0)
+p Math.exp(1)
+p Math.exp(2)
