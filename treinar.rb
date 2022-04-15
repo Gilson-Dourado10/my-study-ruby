@@ -1,18 +1,24 @@
-# método Math
+# método Comparação
+puts 1 < 2
+p''
+puts 1 > 2
+p ''
+puts 3 <= 4
+p ''
+puts 3 >= 4
+p ''
 
-puts(Math::PI)
-puts(Math::E)
-puts(Math.cos(Math::PI/3))
-puts(Math.tan(Math::PI/4))
-puts(Math.log(Math::E**2))
-puts((1 + Math.sqrt(5))/2)
+puts 2 == 2
+p ''
+puts 2 != 3
+p ''
+puts 'cachorro' <  'Gato'.capitalize
 
-p Math::PI
-puts (Math.sqrt 16)/2
+puts 'cachorro'.eql? 'gato'
 
+puts 1.eql? 1
+puts   'foo'.eql?('foo')
+g = 'gilson'
+puts g.eql? 'gilson'
 
-
-
-p Math.exp(0)
-p Math.exp(1)
-p Math.exp(2)
+puts g.eql? 'gilsom'
