@@ -1,17 +1,16 @@
 
-puts 'ola!!, como é o seu nome'
- nome = gets.chomp
-puts 'ola, ' + nome +'.'
-if nome == 'pedro'
-  puts 'que nome bonito!'
-end
-
-puts' eu sou um vidente, me diga o seu nome'
+puts 'Olá,e  benvindo á aula de lógica de programação com Ruby.'
+puts 'eu sou o professor Pietro, e o seu qual é? '
 nome = gets.chomp
-if nome == 'Gilson'
-  puts ' vejo coisas maravilhosas a seu respeito no futuro'
-else
-  puts 'seu futuro é... Ó Deus!,olha hora.'
-  p ' mil perdões, tenho que ir!!!'
+if nome == nome.capitalize
+  puts 'por favor, sente-se,' + nome+'.'
+  else
+  puts nome + ' voce quer dizer? ' + nome.capitalize+ ', não é ?'
+  puts 'você não sabe nem  escrever o seu nome??'
+  resposta = gets.chomp
+  if resposta.downcase == 'sim'
+    puts 'Hunf, vá sente-se!!'
+  else
+    puts 'FORA!!!'
+  end
 end
-
