@@ -1,24 +1,17 @@
-# método Comparação
-puts 1 < 2
-p''
-puts 1 > 2
-p ''
-puts 3 <= 4
-p ''
-puts 3 >= 4
-p ''
 
-puts 2 == 2
-p ''
-puts 2 != 3
-p ''
-puts 'cachorro' <  'Gato'.capitalize
+puts 'ola!!, como é o seu nome'
+ nome = gets.chomp
+puts 'ola, ' + nome +'.'
+if nome == 'pedro'
+  puts 'que nome bonito!'
+end
 
-puts 'cachorro'.eql? 'gato'
+puts' eu sou um vidente, me diga o seu nome'
+nome = gets.chomp
+if nome == 'Gilson'
+  puts ' vejo coisas maravilhosas a seu respeito no futuro'
+else
+  puts 'seu futuro é... Ó Deus!,olha hora.'
+  p ' mil perdões, tenho que ir!!!'
+end
 
-puts 1.eql? 1
-puts   'foo'.eql?('foo')
-g = 'gilson'
-puts g.eql? 'gilson'
-
-puts g.eql? 'gilsom'
