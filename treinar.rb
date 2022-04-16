@@ -1,16 +1,17 @@
+# repetição looping while
 
-puts 'Olá,e  benvindo á aula de lógica de programação com Ruby.'
-puts 'eu sou o professor Pietro, e o seu qual é? '
-nome = gets.chomp
-if nome == nome.capitalize
-  puts 'por favor, sente-se,' + nome+'.'
-  else
-  puts nome + ' voce quer dizer? ' + nome.capitalize+ ', não é ?'
-  puts 'você não sabe nem  escrever o seu nome??'
-  resposta = gets.chomp
-  if resposta.downcase == 'sim'
-    puts 'Hunf, vá sente-se!!'
-  else
-    puts 'FORA!!!'
-  end
+x = 10
+while x >= 1
+  puts 'RODANDO O LOOP  WHILE'
+  x -= 1
 end
+
+puts ' '
+puts ' '
+# looping for
+
+i = 'RODANDO LOOP FOR'
+for a  in 1..10 do
+  puts i
+end
+
