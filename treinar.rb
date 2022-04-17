@@ -3,32 +3,32 @@
 
 
 #looping DO
-i = 2
+
+
+
+i = 2+(1*2)
 loop do
-  i = i + 1
+  i += 1
   puts i
-  break         # this will cause execution to exit the loop
-end
-
-loop do
-  puts "Do you want to do that again?"
-  answer = gets.chomp
-  if answer != 'Y'
-    break
-  end
-end
-
-begin
-  puts "Do you want to do that again?"
-  answer = gets.chomp
-end while answer == 'Y'
-
-
-i = 9
-loop do
-  i = i + 1
-  puts i
-  if i  == 10
+  if i  == 12
   break
   end
 end
+p '*****************************'
+i = -10
+loop do
+  i += 10
+  puts i
+  if i = 0
+  break
+  end
+end
+
+p '==========================='
+nome = "gil"
+loop do
+  puts nome
+  if nome == "gil"
+    break
+    end
+  end
