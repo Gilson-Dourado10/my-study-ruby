@@ -1,34 +1,20 @@
-# repetição looping while
 
-
-
-#looping DO
-
-
-
-i = 2+(1*2)
+i = 0
 loop do
-  i += 1
-  puts i
-  if i  == 12
-  break
+   i += 1
+  if i  == 4
+    next
   end
+   puts i
+   if i == 10
+     break
+   end
 end
-p '*****************************'
-i = -10
+p'****************************************'
+x = 42
 loop do
-  i += 10
-  puts i
-  if i = 0
+  puts x
+  x = 2
   break
-  end
 end
-
-p '==========================='
-nome = "gil"
-loop do
-  puts nome
-  if nome == "gil"
-    break
-    end
-  end
+puts x
