@@ -18,3 +18,16 @@ loop do
   break
 end
 puts x
+p'======================================'
+x =  gets.chomp.to_i
+until x < 0
+  puts x
+  x -= 1
+end
+puts 'done'
+p'****************************'
+i = 0
+until i == 5
+  puts i
+  i += 1
+end
