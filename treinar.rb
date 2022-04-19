@@ -1,20 +1,22 @@
 
-puts 'ola, qual o seu nome?'
-nome = gets.chomp
-puts ' ola,' +nome+ ' .'
-if nome == 'Gil'
-  puts ' que nome bonito '
-else
-  if nome == 'Jade'
-    puts 'que nome bonito!'
-  end
-end
+euNaoQueroEstudar = false
+euSouBrasileiro = true
+euAmoComidaVegana = false
+euFacoExercicio = true
+euSouGilson = true
 
-p '======================================='
-
-puts 'Olá, qual o seu nome?'
-nome = gets.chomp
-puts 'ola ' + nome + ' . '
-if (nome == ' Gil ' or nome == ' Jade ')
-  puts ' Que nome bonito!!!'
-end
+puts (euSouGilson and euFacoExercicio)
+puts (euNaoQueroEstudar and euSouBrasileiro)
+puts ( euSouGilson and euNaoQueroEstudar)
+puts ( euSouBrasileiro and euAmoComidaVegana )
+puts
+puts (euSouGilson or  euNaoQueroEstudar)
+puts (euAmoComidaVegana or  euFacoExercicio)
+puts ( euSouGilson or euNaoQueroEstudar)
+puts (euSouGilson or euFacoExercicio )
+puts
+puts ( not euSouGilson )
+puts ( not euSouBrasileiro)
+puts'****************'
+puts 'euNaoQueroEstudar' < 'euSouBrasileiro'
+puts 'euAmoComidaVegana' > 'euFacoExercicio'
