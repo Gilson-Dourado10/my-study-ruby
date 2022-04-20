@@ -1,22 +1,24 @@
 
-euNaoQueroEstudar = false
-euSouBrasileiro = true
-euAmoComidaVegana = false
-euFacoExercicio = true
-euSouGilson = true
+puts []
+puts [5]
+puts ['frango '+ ' peixe']
+puts sabor = ' baunilha'
+nomes = ['ana' , 'Gilson' ,' jose' ]
+puts [89.9, sabor , [true, false], nomes ]
+puts '*************************************************'
+ nomes = ['ana' , 'Gilson' ,' jose' ]
+puts nomes
+puts nomes [0]
+puts nomes [1]
+puts nomes [2]
+p nomes [3]
+puts nomes [3]
+p'========================================'
 
-puts (euSouGilson and euFacoExercicio)
-puts (euNaoQueroEstudar and euSouBrasileiro)
-puts ( euSouGilson and euNaoQueroEstudar)
-puts ( euSouBrasileiro and euAmoComidaVegana )
-puts
-puts (euSouGilson or  euNaoQueroEstudar)
-puts (euAmoComidaVegana or  euFacoExercicio)
-puts ( euSouGilson or euNaoQueroEstudar)
-puts (euSouGilson or euFacoExercicio )
-puts
-puts ( not euSouGilson )
-puts ( not euSouBrasileiro)
-puts'****************'
-puts 'euNaoQueroEstudar' < 'euSouBrasileiro'
-puts 'euAmoComidaVegana' > 'euFacoExercicio'
+linguagens = ['Matemática ', ' Ruby', ' Português' ]
+linguagens.each do |ling|
+  puts 'eu adoro' + ling+ ' !'
+  puts 'e você? '
+end
+puts 'E vamos ouví-lo sobre C++!'
+puts '...'
