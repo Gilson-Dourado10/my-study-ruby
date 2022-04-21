@@ -1,30 +1,18 @@
 
 
 
-pessoa = ['MARIA' , 'VITORIA' , 'TERESA']
-pessoa.each do  |iterar|
-  puts 'Eu gosto da ' + iterar + '!!!'
-  puts 'e você ?'
-end
-puts ' do restante da família não!!!'
-p'???????'
-p'================================================'
-3.times do
-puts 'bom dia no foco nos estudos'
-end
-p'**************************************************************'
-comidas = ['feijoada' , 'macarronada' , 'peixe frito']
-puts comidas
-p comidas
+favoritos = []
+# o push adiciona elemento no fim do array
+favoritos.push 'Gilson , Pedro'
+favoritos.push 'Maria, Joana'
+puts favoritos [0]
 
-puts '$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$'
-puts comidas.to_s
-puts '.............................................................'
-puts comidas.join( ' , ')
-puts '***************************************************************'
-puts comidas.join(' :) '  ) + ( ' R$ 8,00 ' )
-puts
-200.times do
-  puts ['gilson']
-end
+# o last remove o ultimo elemento e mostra o objeto removido
+puts favoritos.last
+puts favoritos.length
+p'**********************************************'
+# o pop remove o último elemento do array
+puts favoritos.pop
+puts favoritos.length
+
 
