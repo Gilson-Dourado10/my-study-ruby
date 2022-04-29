@@ -13,6 +13,7 @@ class Dado
 end
 puts Dado.new.mostrado
 =end
+
 class Dragão
   def initialize nome
     @nome = nome
@@ -57,7 +58,8 @@ class Dragão
     @dormindo = true
     puts ' ele começa a cochilar... '
     passagemDeTempo
-    if @dormindo = false
+    if @dormindo
+      @dormindo = false
       puts '... mas acorda quando vocẽ pára.  '
     end
   end
@@ -70,7 +72,44 @@ class Dragão
   end
   def passagemDeTempo
     if @comidaEstomago > 0
+      @comidaEstomago = @comidaEstomago -1
+      @comidaIntestino = @comidaIntestino +1
+    else
+      if @dormindo
+        @dormindo = false
+        puts 'ele está acordado!'
+      end
+      puts @nome + ' ele está faminto! em desepero ele comeu VOCÊ!'
+      exit
 
+    end
+    if @comidaIntestino >= 10
+      @comidaIntestino = 0
+      puts ' Ops' + @nome + 'teve um acidente...'
+    end
+    if comFome?
+      if @dormindo
+        @dormindo = false
+        puts ' ele está acordado '
+      end
+      puts ' o estômago do ' + @nome + ' está roncando... '
+    end
+    if precisaSair?
+      if @dormindo
+        @dormindo = false
+        puts ' ele estpá acordado!'
+      end
+      puts @nome + ' faz a dança para ir ao quintal... '
     end
   end
 end
+bichinho = Dragão.new 'Norbert'
+bichinho.alimentar
+bichinho.jogar
+bichinho.quintal
+bichinho.colocarNaCama
+bichinho.balancar
+bichinho.colocarNaCama
+bichinho.colocarNaCama
+bichinho.colocarNaCama
+bichinho.colocarNaCama
