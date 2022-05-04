@@ -1,26 +1,20 @@
-saudacao = Proc.new do
-  puts 'Olá tudo bem!!!'
+
+def talvezFaca umaProc
+  if rand(2) == 0
+    umaProc.call
   end
-saudacao.call
-saudacao.call
-saudacao.call
-p'*********************************************'
-VoceGostaDe = Proc.new do |umaBoaCoisa|
-  puts 'eu * realmente * gosto de ' + umaBoaCoisa + '!'
 end
-VoceGostaDe.call 'Bolo de milho'
-VoceGostaDe.call 'Estudar Ruby'
-p '***********************************************************'
-def FacaUmaCoisaImportante umaProc
-  puts' todo mundo apenas ESPERE!Eu tenho uma coisa a fazer...'
+def facaDuasVezes umaProc
   umaProc.call
-  puts ' certo pessoal, eu terminei. Voltem a fazer o que estavam fazendo. '
+  umaProc.call
 end
-digaOla = Proc.new do
-  puts 'OLá'
+piscar = Proc.new do
+  puts '<piscada>'
 end
-digaTchau = Proc.new do
-  puts ' Tchau'
+olhandoFixamente = Proc.new do
+  puts '<olhando fixamente>'
 end
-FacaUmaCoisaImportante digaOla
-FacaUmaCoisaImportante digaTchau
+talvezFaca piscar
+talvezFaca olhandoFixamente
+facaDuasVezes piscar
+facaDuasVezes olhandoFixamente
