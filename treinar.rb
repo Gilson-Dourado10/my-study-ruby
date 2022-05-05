@@ -1,20 +1,26 @@
+def facaAteFalso primeiraEntrada, umaProc
+    entrada = primeiraEntrada
+    saida = primeiraEntrada
 
-def talvezFaca umaProc
-  if rand(2) == 0
-    umaProc.call
+   while  saida
+       entrada = saida
+       saida = umaProc.call entrada
+  end
+    entrada
+end
+construindoVetorDeQuadrados = Proc.new  do | vetor |
+  ultimoNumero = vetor.last
+
+if ultimoNumero <= 0
+  false
+else
+  vetor.pop
+  vetor.push ultimoNumero * ultimoNumero
+  vetor.push ultimoNumero -1
   end
 end
-def facaDuasVezes umaProc
-  umaProc.call
-  umaProc.call
+sempreFalso = Proc.new do |apenasIgnoreMe|
+  false
 end
-piscar = Proc.new do
-  puts '<piscada>'
-end
-olhandoFixamente = Proc.new do
-  puts '<olhando fixamente>'
-end
-talvezFaca piscar
-talvezFaca olhandoFixamente
-facaDuasVezes piscar
-facaDuasVezes olhandoFixamente
+puts facaAteFalso([5], construindoVetorDeQuadrados).inspect
+puts facaAteFalso( 'estou escrevendo isso  as 3:00; alguem me derrube;', sempreFalso )
