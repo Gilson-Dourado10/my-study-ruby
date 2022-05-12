@@ -1,26 +1,15 @@
-def facaAteFalso primeiraEntrada, umaProc
-    entrada = primeiraEntrada
-    saida = primeiraEntrada
-
-   while  saida
-       entrada = saida
-       saida = umaProc.call entrada
-  end
-    entrada
-end
-construindoVetorDeQuadrados = Proc.new  do | vetor |
-  ultimoNumero = vetor.last
-
-if ultimoNumero <= 0
-  false
-else
-  vetor.pop
-  vetor.push ultimoNumero * ultimoNumero
-  vetor.push ultimoNumero -1
+def compor proc1 , proc2
+  Proc.new do |x|
+    proc2.call(proc1.call(x))
   end
 end
-sempreFalso = Proc.new do |apenasIgnoreMe|
-  false
+quadrado = Proc.new do |x|
+  x * x
 end
-puts facaAteFalso([5], construindoVetorDeQuadrados).inspect
-puts facaAteFalso( 'estou escrevendo isso  as 3:00; alguem me derrube;', sempreFalso )
+dobre = Proc.new do |x|
+  x + x
+end
+dobreeEleve = compor dobre , quadrado
+eleveeDobre = compor quadrado , dobre
+puts dobreeEleve.call(5)
+puts eleveeDobre.call(5)
