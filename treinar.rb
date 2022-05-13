@@ -1,15 +1,21 @@
-def compor proc1 , proc2
-  Proc.new do |x|
-    proc2.call(proc1.call(x))
-  end
+
+
+def cadaComparacao(eraUmBloco_agoraUmaProc)
+  eIgual = true
 end
-quadrado = Proc.new do |x|
-  x * x
+  self.each  do |objeto|
+    if eIgual
+      eraUmBloco_agoraUmaProc.call objeto
+    end
+    eIgual = (not eIgual)
+
 end
-dobre = Proc.new do |x|
-  x + x
+['maçã', 'maçã podre', 'cereja', 'mamona'].cadaComparacao do |fruta|
+  puts 'Hum! Eu adoro tortas de '+fruta+', você não?'
 end
-dobreeEleve = compor dobre , quadrado
-eleveeDobre = compor quadrado , dobre
-puts dobreeEleve.call(5)
-puts eleveeDobre.call(5)
+[1, 2, 3, 4, 5].cadaComparacao do |bola_estranha|
+  puts bola_estranha.to_s+' não é um número!'
+end
+
+
+
