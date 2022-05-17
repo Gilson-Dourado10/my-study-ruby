@@ -1,29 +1,10 @@
-class Sensor
-    def  instalar
-      puts 'estou instalando o  o sensor '
-    end
+class Pessoa
+  def gerar.self
+    puts 'vou fazer antes'
+    Pessoa.new
 
-    def iniciar
-      "estou inicializando o sensor "
-    end
+  end
+end
+pessoa = Pessoa.gerar
+p pessoa
 
-    def coletar_metricas
-      #sensor normal
-      puts "estou coletando metricas  "
-      puts "estou analizando metricas "
-    end
-    end
-
-
-    class Sensor_Temperatura < Sensor
-    def coletar_metricas
-      # inicializar_componentes_temperatura
-      puts " estou coletando métricas de tempetura " #  super
-     super
-    end
-    end
-
-sensor = Sensor_Temperatura.new
-sensor.instalar
-sensor.iniciar
-sensor.coletar_metricas
