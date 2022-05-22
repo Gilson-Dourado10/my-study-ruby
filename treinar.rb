@@ -1,25 +1,22 @@
 
+# CALCULATOR
 
-class DouradoTest < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::Dourado::VERSION
-  end
-
-  def test_it_does_something_useful
-    assert true
-  end
+puts "enter  first number: "
+num1 = gets.chomp().to_f
+puts " enter operator:  "
+op  = gets.chomp()
+puts " enter second number: "
+num2 = gets.chomp().to_f
+if op == "+"
+  puts (  num1 + num2 )
+elsif  op == " - "
+  puts ( num1 - num2 )
+elsif  op == "*"
+  puts (num1 * num2 )
+elsif  op == "/"
+  puts (num1 / num2)
+elsif op == "**"
+  puts (num1 ** num2)
+else
+  puts " invalid operator "
 end
-
-class DouradoTest < Minitest::Test
-
-  def test_random_name
-    Array.any_instance.stubs(:sample).returns('Samwise Gangee')
-    assert Dourado.random_name == 'Samwise Gangee'
-  end
-
-  def test_random_email
-    Array.any_instance.stubs(:sample).returns('Samwise Gangee')
-    assert Dourado.random_email == 'samwise.gangee@shire.com.me'
-  end
-end
-
