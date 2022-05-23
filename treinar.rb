@@ -1,22 +1,17 @@
 
-# CALCULATOR
+class Carro
+  attr_accessor :marca, :modelo , :cor , :tanque
+  def initialize(marca , modelo, cor , tanque)
+    @marca = marca
+    @modelo = modelo
+    @cor = cor
+    @tanque = tanque
+   end
+   def to_s
+    "Marca:#{@marca}  Modelo:#{@modelo} Cor: #{@cor} Tanque: #{@tanque}"
 
-puts "enter  first number: "
-num1 = gets.chomp().to_f
-puts " enter operator:  "
-op  = gets.chomp()
-puts " enter second number: "
-num2 = gets.chomp().to_f
-if op == "+"
-  puts (  num1 + num2 )
-elsif  op == " - "
-  puts ( num1 - num2 )
-elsif  op == "*"
-  puts (num1 * num2 )
-elsif  op == "/"
-  puts (num1 / num2)
-elsif op == "**"
-  puts (num1 ** num2)
-else
-  puts " invalid operator "
+   end
 end
+corsa = Carro.new(:chevrolet,:corsa,:preto,50)
+puts corsa
+
