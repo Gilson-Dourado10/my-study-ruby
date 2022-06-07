@@ -1,21 +1,13 @@
-class Amigo
-     def initialize(nome = "Rodrigo")
-       @nome = nome
+require_relative "pessoa"
+class Amigo < Pessoa
+   def distancia
+          puts " muito longe"
      end
-     def diz_ola
-       puts "Olá #{@nome}!"
-     end
-     def diz_adeus
-       puts "Adeus #{@nome}, volte sempre."
-     end
-     end
-     g = Amigo.new("João")
- #<Amigo:@nome="João">
-    g.diz_ola
-    g.diz_adeus
+   end
 
-
-
+amigo = Amigo.new
+amigo.parentesteco
+amigo.distancia
 
 
 

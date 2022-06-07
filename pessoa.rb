@@ -1,6 +1,6 @@
 class Pessoa
-  def initialize (nome)
-    @nome = nome
+  def  parentesteco
+    puts "de infância!!!"
 
   end
 end

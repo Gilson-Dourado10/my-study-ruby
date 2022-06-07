@@ -4,5 +4,6 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/foodie" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/format_string" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ruby-fundamentos-1" vcs="Git" />
   </component>
 </project>
