@@ -1,17 +1,32 @@
-# RANGES
-#
- range1 = (0..10)
+class Teste
 
-range2 = (0...10)
+end
+class OutroTeste < Teste
 
-range1.each { |valor| print "#{valor} " }
-puts ' '
- puts range1
+end
+p String.superclass
+p Teste.superclass
+p OutroTeste.superclass
 
-p'********************************************************************'
-("a"..."z").each { |valor| print "#{valor} " }
+p"*****************************************************"
+class Carro
 
-p"***************************************************************"
-  ("ab".."az").each { |valor| print "#{valor} "}
-
- p   ("a".."z").to_a
+end
+attr_reader :marca , :modelo, :tanque
+attr_acessor :cor
+def initialize(marca , modelo , cor ,tanque)
+  @marca
+  @modelo
+  @cor
+  @tanque
+end
+def to_s
+  " Marca: #{@marca} Modelo: #{@modelo}  Cor: #{@cor} Tanque: #{@tanque}  "
+end
+corsa = Carro.new(:chevrolet ,:corsa ,:preto, :50  )
+gol = Carro.new(:volks , :gol ,:azul,:42)
+Carro.send(:define_method, "multiplica_tanque") do |valor|
+  @tanque * valor
+end
+puts corsa.multiplica_tanque(2)
+puts gol.multiplica_tanque(2)
