@@ -1,8 +1,23 @@
+class A
+  attr_reader :outro
 
-class Carro < Struct.new( :marca  , :modelo , :cor , :tanque)
-  def to_s
-    "Marca:  #{marca}  Modelo: #{modelo} Cor: #{cor} Tanque: #{tanque} "
+  def initialize(outro = nil )
+    @outro = outro
+  end
+  def show
+    puts "Estou em #{self .class.name} , #{object_id}"
+    puts "Outro: #{@outro.object_id}" if !@outro.nil?
   end
 end
-fox = Carro.new(:vw , :fox ,:verde , 45)
-puts fox
+
+class B < A
+end
+a = B.new
+b = B.new(a)
+
+
+a.show
+b.show
+
+b2 = b.dup
+b2.show
