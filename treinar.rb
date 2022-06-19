@@ -19,5 +19,6 @@ b = B.new(a)
 a.show
 b.show
 
-b2 = b.dup
+b2 = Marshal.load(Marshal.dump(b))
 b2.show
+
