@@ -15,10 +15,15 @@ class CaixaDeParafusos
     outra.quantidade = 0
     nova
   end
+  def /(quantidade)
+    caixas = Array.new(quantidade, @quantidade / quantidade)
+    (@quantidade % quantidade).times { |indice| caixas[indice] += 1 }
+    @quantidade = 0
+    caixas.map { |quantidade| CaixaDeParafusos.new(quantidade) }
+  end
 end
 caixa1 = CaixaDeParafusos.new(10)
 caixa2 = CaixaDeParafusos.new(20)
 caixa3 = caixa1 + caixa2
-puts caixa1
-puts caixa2
-puts caixa3
+
+puts caixa3 / 4
