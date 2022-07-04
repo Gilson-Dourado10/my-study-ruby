@@ -1,26 +1,20 @@
-class Primata
-  def come
-    puts "Nham!"
+
+module TesteMod
+  module ClassMethods
+    def class_method
+      puts "Esse é um método da classe!"
+    end
   end
-  def dorme
-    puts "Zzzzzz..."
+  def self.included(where)
+    where.extend(ClassMethods)
   end
-end
-class Humano < Primata
-  def conecta_na_web
-    puts "Login ... senha ..."
-  end
-end
-module Ave
-  def voa
-    puts "Para o alto, e avante!"
+  def instance_method
+    puts "Esse é um método de instância!"
   end
 end
-class Mutante < Humano
-  include Ave
+class TesteCls
+  include TesteMod
 end
-mutante = Mutante.new
-mutante.come
-mutante.dorme
-mutante.conecta_na_web
-mutante.voa
+t = TesteCls.new
+t.instance_method
+TesteCls.class_method
