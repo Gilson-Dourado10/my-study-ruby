@@ -1,20 +1,19 @@
-
-module TesteMod
-  module ClassMethods
-    def class_method
-      puts "Esse é um método da classe!"
-    end
-  end
-  def self.included(where)
-    where.extend(ClassMethods)
-  end
-  def instance_method
-    puts "Esse é um método de instância!"
+thread = Thread.new do
+  puts "Thread #{self.object_id} iniciada!"
+  5.times do |valor|
+    puts valor
+    sleep 1
   end
 end
-class TesteCls
-  include TesteMod
+puts "já criei a thread"
+thread.join
+p"*****************************************************************"
+thread = Thread.new do
+  puts "Thread #{self.object_id} iniciada!"
+  5.times do |valor|
+    puts valor
+    sleep 1
+  end
 end
-t = TesteCls.new
-t.instance_method
-TesteCls.class_method
+puts "já criei a thread"
+thread.join(3)
