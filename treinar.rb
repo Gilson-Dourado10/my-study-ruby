@@ -1,19 +1,12 @@
-thread = Thread.new do
-  puts "Thread #{self.object_id} iniciada!"
-  5.times do |valor|
-    puts valor
-    sleep 1
+proc = Proc.new do |parametro|
+  parametro.times do |valor|
+    print "[#{valor + 1}/#{parametro}]"
+    sleep 0.5
   end
 end
-puts "já criei a thread"
+thread = nil
+5.times do |valor|
+  thread = Thread.new(valor, &proc)
+end
 thread.join
-p"*****************************************************************"
-thread = Thread.new do
-  puts "Thread #{self.object_id} iniciada!"
-  5.times do |valor|
-    puts valor
-    sleep 1
-  end
-end
-puts "já criei a thread"
-thread.join(3)
+puts "Terminado!"
