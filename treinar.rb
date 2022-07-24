@@ -1,12 +1,28 @@
-proc = Proc.new do |parametro|
-  parametro.times do |valor|
-    print "[#{valor + 1}/#{parametro}]"
-    sleep 0.5
+class Exemplo
+  @@variavel_de_classe = "Variável da classe"
+
+  def initialize(variavel_de_instancia)
+    @variavel_de_instancia = variavel_de_instancia
+  end
+
+  def variavel_de_instancia
+    @variavel_de_instancia
+  end
+
+  def self.variavel_de_instancia
+    @variavel_de_instancia
+  end
+
+  def variavel_de_classe
+    @@variavel_de_classe
+  end
+
+  def self.variavel_de_classe
+    @@variavel_de_classe
   end
 end
-thread = nil
-5.times do |valor|
-  thread = Thread.new(valor, &proc)
-end
-thread.join
-puts "Terminado!"
+x = Exemplo.new("Instância 1")
+puts x.variavel_de_classe
+puts x.variavel_de_instancia
+puts Exemplo.variavel_de_classe
+p Exemplo.variavel_de_instancia
