@@ -1,18 +1,11 @@
 
-  class Person
-    def initialize(name)
-      @name = name
+  class Ghost
+    def reflect
+      self
     end
   end
-  def name
-    @name
-  end
-
-  def password=(password)
-    @password = password
-  end
-  person = Person.new("Ada")
-  person.password=("super secret")
-  p person
+  
+  g = Ghost.new
+  puts  g.reflect == g
 
 
