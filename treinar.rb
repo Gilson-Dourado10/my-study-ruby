@@ -1,11 +1,8 @@
 
-  class Ghost
-    def reflect
-      self
-    end
+class Ghost
+  def self.reflect
+    self
   end
-  
-  g = Ghost.new
-  puts  g.reflect == g
+end
 
-
+puts Ghost.reflect == Ghost
