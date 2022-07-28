@@ -1,8 +1,8 @@
 
-class Ghost
-  def self.reflect
-    self
-  end
-end
+name = "Jane"
 
-puts Ghost.reflect == Ghost
+puts "Name is: #{name}"
+
+puts "Self is: #{self}"
+
+puts "Self class is: #{self.class}"
