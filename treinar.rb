@@ -1,11 +1,16 @@
-# hash
-h = { foo:  0 , :bar  =>  1 , 'baz':  2 }
-puts h
-p'******************************************************'
-pessoa = { nome:  'Matz' , idioma:  'Ruby' }
-p pessoa
-p'************************************************************'
-def  some_method ( hash )
-  p  hash
+mmodule Mod
+def hello
+  "Hello from Mod.\n"
 end
-some_method ({ foo:  10 , bar:  51 , baz:  2 })
+
+
+class Klass
+  def hello
+    "Hello from Klass.\n"
+  end
+end
+
+k = Klass.new
+k.hello         #=> "Hello from Klass.\n"
+k.extend(Mod)   #=> #<Klass:0x401b3bc8>
+k.hello
