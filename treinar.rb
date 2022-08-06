@@ -11,3 +11,20 @@ Note = Struct.new(:cpu , :ram, :ssd ) do
   end
 end
 puts notebook = Note.new("i9", "32gb ", "1tb" )
+
+
+p'*******************************************************************'
+
+Status = Struct.new(success?, errors)
+
+def initialize(request_params)
+  @request_params = request_params
+end
+
+def call
+  if @request_params[:status].present? && @request_params[:status] == "success"
+    status = Status.new(true, nil)
+  else
+    status = Status.new(false, @request_params[:errors])
+  end
+end
