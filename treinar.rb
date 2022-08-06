@@ -5,3 +5,9 @@ p notebook.cpu
 p   notebook.ram
 p   notebook.ssd
 p'************************************************************'
+Note = Struct.new(:cpu , :ram, :ssd ) do
+  def  all_configs
+      "Pc configs: #{cpu} - #{ram}  - #{ssd}"
+  end
+end
+puts notebook = Note.new("i9", "32gb ", "1tb" )
