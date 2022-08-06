@@ -1,16 +1,7 @@
-mmodule Mod
-def hello
-  "Hello from Mod.\n"
-end
-
-
-class Klass
-  def hello
-    "Hello from Klass.\n"
-  end
-end
-
-k = Klass.new
-k.hello         #=> "Hello from Klass.\n"
-k.extend(Mod)   #=> #<Klass:0x401b3bc8>
-k.hello
+# struct
+    Notebook= Struct.new( :cpu , :ssd, :ram   )
+    notebook = Notebook.new( "i7" ,"16gb", " 256ssd" )
+p notebook.cpu
+p   notebook.ram
+p   notebook.ssd
+p'************************************************************'
