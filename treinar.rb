@@ -1,9 +1,8 @@
-class Dev
-  attr_accessor :name, :language
-  def initialize(hash)
-    self.name = hash[:name]
-    self.language = hash[:language]
+pal = "Never a foot too far, even."
+class String
+  def palindrome?
+    letters = self.downcase.scan(/\w/)
+    letters == letters.reverse
   end
 end
-matz = Dev.new(name: 'Matz', language: 'Ruby')
-puts Dev
+puts pal.palindrome?
