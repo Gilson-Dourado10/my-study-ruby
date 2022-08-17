@@ -16,7 +16,14 @@ def adicionar_contato
   print "Telefone:"
   telefone = gets.chomp
   @agenda<< {nome: nome , telefone: telefone }
+end
+def ver_contato
+  print " qual nome você deseja"
+  nome = gets.chomp
+  @genda.each do  |contato|
+
   end
+end
 
   loop do
   puts "1. Contatos\n2. Adicionar contato\n3. Ver Contato\n4. Editar Contato\n5. Remover Contato\n0. Sair  "
@@ -32,5 +39,7 @@ def adicionar_contato
   break
   when codigo == 2
     adicionar_contato
+  when codigo == 3
+    ver_contato
   end
 end
