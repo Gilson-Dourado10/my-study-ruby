@@ -19,9 +19,11 @@ def adicionar_contato
 end
 def ver_contato
   print " qual nome você deseja"
-  nome = gets.chomp
-  @genda.each do  |contato|
-
+    nome = gets.chomp
+    @genda.each do  |contato|
+     if  contato[:nome].downcase.include?(nome.downcase)
+        puts "#{contato[:nome]} - #{contato[:telefone]}"
+    end
   end
 end
 
