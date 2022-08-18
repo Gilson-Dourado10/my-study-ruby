@@ -23,7 +23,15 @@ def ver_contato
     @genda.each do  |contato|
      if  contato[:nome].downcase.include?(nome.downcase)
         puts "#{contato[:nome]} - #{contato[:telefone]}"
-    end
+     end
+     def editar_contato
+       print "Qual nome deseja editar:"
+       nome= gets.chomp
+       @genda.each do |contato|
+       if contato[:nome].downcase == (nome.downcase)
+         print"Nome para editar (se quiser manter o mesmo nome, aperter enter."
+       end
+     end
   end
 end
 
@@ -38,10 +46,14 @@ end
 
   when codigo == 1
       todos_contatos
-  break
+
   when codigo == 2
     adicionar_contato
+
   when codigo == 3
     ver_contato
+
+  when codigo == 4
+    editar_contato
   end
 end
