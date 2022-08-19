@@ -9,11 +9,13 @@ end
   2.times do
     aluno{}
     puts " digite o nome do aluno "
-    aluno[:nome] = gets
+     aluno[:nome] = gets.chomp
     puts " digite o telefone do aluno"
-    aluno[:tel] = gets
+    aluno[:telefone] = gets.chomp
     alunos << aluno
   end
 alunos.each do |aluno|
-  puts " aluno: #{aluno[:nome]}"
+  p '==========================================================================='
+  puts " aluno: #{aluno[:nome]} , #{aluno[:telefone]}"
 end
+
