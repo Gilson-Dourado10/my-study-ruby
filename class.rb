@@ -1,42 +1,19 @@
-class NomeDaClasse
-    def imprimir_ola (nome)
-      puts "ola" #{nome}
-    end
+# programa usando hash
+loop do
+  puts "BENVINDO AO PROGRAMA"
+  puts " Digite (0 para SAIR OU 1 ṔARA CONTINUAR)"
+  valor = gets.to_i
+  break if(valor == 0 )
 end
-objeto = NomeDaClasse.new
-objeto.imprimir_ola("Faustão")
-p objeto
-
-p '******************************************************'
-
-class MinhaClasse
-  def imprimir_ola(nome)
-    @nome = nome
-    puts "Adeus #{@nome}"
+  alunos= []
+  2.times do
+    aluno{}
+    puts " digite o nome do aluno "
+    aluno[:nome] = gets
+    puts " digite o telefone do aluno"
+    aluno[:tel] = gets
+    alunos << aluno
   end
+alunos.each do |aluno|
+  puts " aluno: #{aluno[:nome]}"
 end
-
-def nome
-  @nome
-  end
-gilson = MinhaClasse.new
-gilson.imprimir_ola("Gilson")
-gilson.nome
-
-p'***********************************************************************'
-
-class NomeDaClasse
-  def initialize(nome)
-   @nome = nome
-  end
-  def imprimir_adeus(nome)
-    puts "adeus #{@nome}"
-  end
-  def nome
-    @nome
-   end
-end
-pessoa = NomeDaClasse.new("Pedro")
-pessoa.nome = ("Pedro")
-pessoa.nome
-

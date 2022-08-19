@@ -30,6 +30,7 @@ def ver_contato
        @genda.each do |contato|
        if contato[:nome].downcase == (nome.downcase)
          print"Nome para editar (se quiser manter o mesmo nome, aperter enter."
+         nome_salvo = contato[:nome]
        end
      end
   end
@@ -55,5 +56,6 @@ end
 
   when codigo == 4
     editar_contato
+    end
   end
 end
