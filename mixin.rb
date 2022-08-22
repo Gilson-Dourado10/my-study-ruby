@@ -9,5 +9,6 @@ else
 end
 =end
 # condição? verdadeiro : falso
- nome.eql?("gilson ") ? "pai de dois filhos Samuel e Daniel" : "outro pai diferente"
+nome = "gilson"
+ puts nome.eql?("gilson") ? " pai de dois filhos SAMUEL E DANIEL" : "  outro pai diferente "
 
