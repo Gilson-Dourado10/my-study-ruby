@@ -1,6 +1,10 @@
-
-def teste
-    puts "bom dia gilson"
+# STRING PALINDROME
+class String
+    def palindrome?
+        self.downcase == self.reverse.downcase
+    end
 end
 
-puts teste
+puts "racecar".palindrome? # true
+puts "Racecar".palindrome? # true
+puts "mississippi".palindrome? # false
