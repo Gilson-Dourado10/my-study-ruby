@@ -1,8 +1,10 @@
-# Tipos de dados symbol
+# Tipos de dados array
 
-onebit_symbol = :ruby_symbol
-second_symbol = :ruby_symbol
-p second_symbol.object_id
-p onebit_symbol.object_id
+
+linguagem = [ "português ", " matematica, " , "filosofia" ]
+p linguagem
+operadores  = [1+2 , 5*3, 2**2, 5%2, 2-2, 3/3 ]
+p operadores
+
 
 
