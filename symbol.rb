@@ -1,10 +1,7 @@
-# Tipos de dados array
+# Tipos de dados hash
 
-
-linguagem = [ "português ", " matematica, " , "filosofia" ]
-p linguagem
-operadores  = [1+2 , 5*3, 2**2, 5%2, 2-2, 3/3 ]
-p operadores
-
-
-
+hash = { curso: 'ruby puro' , linguagem: 'ruby' , plataforma: "youtube"  }
+p hash
+p hash[:curso]
+p hash[:linguagem]
+p hash[:plataforma]
