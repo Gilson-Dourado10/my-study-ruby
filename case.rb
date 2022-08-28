@@ -15,3 +15,25 @@
    else
      puts "mês inválido "
    end
+   p'------------------------------------------------------------------------'
+   print "qual dia da semana: "
+   dia = gets.chomp.to_i
+   case dia
+   when 1
+     puts "segunda"
+   when 2
+     puts "terça"
+   when 3
+     puts "quarta"
+   when 4
+     puts "quinta "
+   when 5
+     puts "sexta"
+   when 6
+     puts "sabado"
+   when 7
+   puts "domingo"
+   else
+     puts "dia invalido"
+   end
+
