@@ -3,24 +3,20 @@ loop do
   puts result
   puts 'Selecione uma das seguintes opções'
   puts '1- Descobrir a idade de uma pessoa'
-  puts '2- Descobrir dia  nascimento de uma pessoa'
   puts '0- Sair'
   print 'Opção: '
-
   option = gets.chomp.to_i
 
   if option == 1
     print 'Digite o ano de nascimento: '
-    year_of_birth = gets.chomp.to_i
+   year_of_birth = gets.chomp.to_i
     print 'Digite o ano atual: '
-    current_year = gets.chomp.to_i
-    age = current_year - year_of_birth
-    if option == 2
-      print " digite o dia do nascimento: "
-      day_of_birth == gets.chomp.to_i
-      end
-    result = "Quem nasceu no ano de #{year_of_birth}, tem #{age} anos em #{current_year}"
-  elsif option == 0
+   current_year = gets.chomp.to_i
+     print 'digite o dia que você  nasceu:  '
+   day_of_birth = gets.chomp.to_i
+   age = current_year - year_of_birth
+   result = "Você nasceu no dia #{day_of_birth} e no ano de #{year_of_birth}, tem #{age} anos em #{current_year}"
+   elsif option == 0
     break if option == 0
   else
     result = 'Opção inválida'
