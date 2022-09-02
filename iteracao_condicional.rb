@@ -3,6 +3,7 @@ loop do
   puts result
   puts 'Selecione uma das seguintes opções'
   puts '1- Descobrir a idade de uma pessoa'
+  puts '2- Descobrir dia  nascimento de uma pessoa'
   puts '0- Sair'
   print 'Opção: '
 
@@ -14,6 +15,10 @@ loop do
     print 'Digite o ano atual: '
     current_year = gets.chomp.to_i
     age = current_year - year_of_birth
+    if option == 2
+      print " digite o dia do nascimento: "
+      day_of_birth == gets.chomp.to_i
+      end
     result = "Quem nasceu no ano de #{year_of_birth}, tem #{age} anos em #{current_year}"
   elsif option == 0
     break if option == 0
