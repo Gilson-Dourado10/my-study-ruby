@@ -22,6 +22,10 @@ loop do
     print'qual a matéria que você leciona: '
     materia_professor = gets.chomp.to_s
     escola = "o professor #{nome_professor} leciona a matéria #{materia_professor} na faculdade "
-
+  elsif opcao == 0
+    puts "..........Saindo do programa................"
+  break
+  else
+    puts " opção invalida (digite a opção 1 , 2 ou 0 para sair do programa)"
   end
 end
