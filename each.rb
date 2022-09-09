@@ -37,7 +37,7 @@ nome.each { |var| puts var }
 
 futebol = [" palmeiras", "são paulo", "corinthians", "botafogo", "flamengo" ]
 futebol.each {|p| puts futebol}
-=end
+
 n1 = 1
 n2 = 3
 n3 = 10
@@ -47,3 +47,14 @@ p n1.odd?
 p n2.odd?
 p n3.odd?
 p n4.odd?
+=end
+aulas = {'Aula 1 ' => 'liberada', 'Aula 2 ' => 'liberada', 'Aula 3 ' => 'liberada', 'Aula 4 ' => 'liberada', 'Aula 5 ' => 'em breve'}
+
+aulas.each do |key, value|
+  puts "#{key} #{value}"
+end
+
+aulas = {'Aula 1 ' => 'liberada', 'Aula 2 ' => 'liberada', 'Aula 3 ' => 'liberada', 'Aula 4 ' => 'liberada', 'Aula 5 ' => 'em breve'}
+aulas = {Aula1: 'liberada', Aula2: 'liberada'}
+
+#capitais = { acre: 'Rio Branco', sao_paulo: 'São Paulo'}
