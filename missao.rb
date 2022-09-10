@@ -1,20 +1,6 @@
 
-missao = [2,4,8]
-missao.map! do |num|
-  num **2
-end
-puts "#{missao}"
+hash = {A:1 , B:2 , C:3  }
+hash.each do |x ,y|
 
-p"**************************"
-array =[2,2,2]
-array.map! do |a|
-  a ** 2
+puts "uma das chaves é: #{x} e o seu valor: #{y}"
 end
-puts " #{array}"
-
-p"################################"
-array = [1,5,10]
-new_array = array.map! do |a|
-  a * 2
-end
-p array
