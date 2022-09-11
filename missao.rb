@@ -1,6 +1,4 @@
 
-hash = {A:1 , B:2 , C:3  }
-hash.each do |x ,y|
+Numbers = {a: 10, b: 30, c: 20, d: 25, e: 15}
 
-puts "uma das chaves é: #{x} e o seu valor: #{y}"
-end
+puts "A chave de maior valor é #{Numbers.key(Numbers.values.max)} e o elemento de maior valor é #{Numbers.values.max}"
