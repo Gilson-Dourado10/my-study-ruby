@@ -21,3 +21,20 @@ end
 
 puts "O maior número é o da chave #{result[0]} com o valor #{result[1]}"
 
+
+
+puts "a chave é#{x[0]} e o maior valor#{y[1]} "
+
+numbers = {a: 10, b: 24, c: 20, d: 25, e: 15}
+
+maior_numero = 0
+result = []
+
+numbers.each do |k, v|
+  if v > maior_numero
+    maior_numero = v
+    result = [k, v]
+  end
+end
+
+puts "O maior número é o da chave #{result[0]} com o valor #{result[1]}"
