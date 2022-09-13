@@ -1,35 +1,11 @@
-=begin
-class  Array
 
-    search = [10,20,80]
-    for x  in  search
-      if x == 10
-
-        puts" o elemento está no array"
-      else
-        puts "o elemento não esta no array "
-      end
-  end
+def talk(first_name, last_name)
+  puts "Olá #{first_name} #{last_name}, como você está?"
 end
-=end
-resultado = ' '
-loop do
-  puts resultado
-  puts " escolha uma das opções para o cálculo da calculadora"
-  puts " 1- dividir"
-  puts "2- subtrair"
-  puts "3- somar"
-  puts "4- multiplicar"
-  puts "0- sair"
-  opcao = gets.chomp.to_i
-  print " digite o primeiro número para o  cálculo: "
-  n1 = gets.chomp .to_i
-  print " digite o segundo número: "
-  n2.gets.chomp.to_i
-  case  op
-    when 1..4
 
-    resultado = "puts "
+first_name = 'GILSON'
+last_name = 'DOURADO'
 
-  end
-end
+talk(first_name, last_name)
+
+
