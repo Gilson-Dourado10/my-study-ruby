@@ -7,22 +7,28 @@ class Lampada
 end
 
 class Conta
-  def depositar
+  def depositar(dep)
+    @dep =dep
   end
 
-  def sacar
+  def sacar(saque)
+    @saque = saque
   end
 
-  def consultar_saldo(saldo = 100)
+  def consultar_saldo(saldo)
     @saldo =saldo
   end
 
-  def transferir
+  def transferir(transfere)
+    @transfere = transfere
   end
 end
 
 conta = Conta.new
-puts conta.consultar_saldo
+p conta.consultar_saldo(1000)
+p conta.depositar(50)
+p conta.sacar(1050)
+p conta.transferir(10)
 
 
 
