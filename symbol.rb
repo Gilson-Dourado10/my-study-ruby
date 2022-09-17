@@ -1,15 +1,15 @@
-module One
-  class Flor
-  end
-  $f1 = :Flor
+
+class Symbol
+  puts "string".object_id , "  string é igual a: #{object_id}"
+  puts "string".object_id,"  string é igual a: #{object_id}"
+  p"************************************************************************"
+  puts :symbol.object_id," symbol é igual a: #{object_id}"
+  puts :symbol.object_id,"  symbol  é igual a: #{object_id}"
+  p"***********************************************8"
+  p abc =          "string".object_id ,"  string é igual a: #{object_id}"
+  p abc =          "string ".object_id,"  string é igual a: #{object_id}"
+  p"**********************************************************************************"
+  p abc =           :abc.object_id," symbol é igual a: #{object_id}"
+  p abc=            :abc.object_id,"  symbol é igual a: #{object_id}"
+
 end
-module Two
-  Flor = 1
-  $f2 = :Flor
-end
-def Flor()
-end
- $f3 = :Flor
-p $f1.object_id   #=> 2514190
-p $f2.object_id   #=> 2514190
-p $f3.object_id   #=> 2514190
