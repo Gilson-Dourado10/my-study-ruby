@@ -14,4 +14,10 @@ end
        puts  "vocé desenvolvedor ruby jr"
     else
        puts  " vocẽ precisa aprender Ruby urgente "
-end
+    end
+p"**************************************************"
+puts 5.to_s.class
+puts 5.to_f.class
+puts 5.to_r.class
+puts 5.to_c.class
+puts 5.to_i.class

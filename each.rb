@@ -1,16 +1,8 @@
-
-
-
-
-
-
-aulas = {'Aula 1 ' => 'liberada', 'Aula 2 ' => 'liberada', 'Aula 3 ' => 'liberada', 'Aula 4 ' => 'liberada', 'Aula 5 ' => 'em breve'}
-
-aulas.each do |key, value|
-  puts "#{key} #{value}"
+[:foo, :bar].each do |item|
+  puts(item)
 end
+p"*******************************************"
+[:foo, :bar].each(&method(:puts))
 
-aulas = {'Aula 1 ' => 'liberada', 'Aula 2 ' => 'liberada', 'Aula 3 ' => 'liberada', 'Aula 4 ' => 'liberada', 'Aula 5 ' => 'em breve'}
-curso = {Aula1: 'liberada', Aula2: 'liberada'}
-
-p capitais = { acre: 'Rio Branco', sao_paulo: 'São Paulo'}
+[:pedro, :joão].each(&method(:puts))
+[:"1",:"2"].each(&method(:puts))
