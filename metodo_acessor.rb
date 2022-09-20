@@ -1,26 +1,11 @@
-=begin
-class CSWebsite
-  def initialize(website)
-    @website = website
+
+class Meth
+  def initialize(acesso )
+    @acesso = acesso
   end
-  attr_reader :website
+  attr_accessor :acesso
 end
-gfg = CSWebsite.new"www.geeksforgeeks.com.br"
-p gfg.website
-=end
-p "*****************************************************************"
+mt = Meth.new "aprendendendo métodos acessores"
+puts mt.acesso
 
-class Site
-  def initialize(site2)
-    @site2 = site2
-  end
-  attr_reader :site2
-
-  attr_writer :site2
-end
-gfg2 = Site.new "www.praticandoruby.com.br"
-puts  gfg2.site2
-gfg2.site2 ="www.aprendendendoruby.com.br"
-puts  gfg2.site2
-
-
+puts mt.acesso = " este o método attr_acessor"
