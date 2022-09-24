@@ -1,53 +1,32 @@
-=begin
-class Pai
-  attr_accessor :nome , :idade
+class Pessoa
+  attr_accessor :nome, :email
+end
 
-  def falar(texto = "ola,tudo bem?")
+class PessoFisica < Pessoa
+  attr_accessor :cpf
+  def falar(texto)
     texto
   end
 end
 
-class Filha < Pai
-end
-papai = Pai.new
-papai.nome =" Pedro santos"
-papai.idade = 40
-puts "meu nome é: "+ papai.nome
-p" eu tenho " ,+ papai.idade
-puts papai.falar
-p"*****************************************"
-filhinha  = Filha.new
-filhinha.nome = "Andresa Santos"
-filhinha.idade = 18
-
-puts "meu nome é  " + filhinha.nome
-puts "eu fiz  ", + filhinha.idade
-puts filhinha.falar("hello friends")
-=end
-class Conta
-  def initialize(nome)
-
+class PessoaJuridica < Pessoa
+  attr_accessor :cnpj
+  def pagar_funcioario
+    puts "pagando funcionário"
   end
-    attr_accessor :endereco,:cep
- def  depositar(valor)
- end
-
- def sacar
-   valor  = 100
-      if valor > saldo
-        puts  "saldo insuficiente para sacar"
-     end
- end
 end
-class Conta_Corrente
-end
-c = Conta.new"Gilson Dourado"
-c.depositar "100"
-p c.endereco = "rua maria joana n° 300"
-p c.cep = " 09300-333"
-p c.sacar
-
-p"+++++++++++++++++++++++++++++++++++++"
-
-
-
+p1= Pessoa.new
+p p1.nome = "pedro vasconcelos"
+p p1.email = "pedro@pedro@hotmail.com"
+p"¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨"
+p2 =PessoFisica.new
+p p2.nome = " pedro vasconcelos"
+p p2.email = "pedro@pedro@hotmail.com"
+p p2.cpf = "030.654.666-25"
+p p2.falar"hello friends"
+p"****************************************"
+p3 =PessoaJuridica.new
+p p3.nome = " Sandro vasconcelos"
+p p3.email = "sandro@hotmail.com"
+p p3.cnpj = "336.6233.0001-36"
+p3.pagar_funcioario
