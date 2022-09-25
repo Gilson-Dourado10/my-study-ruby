@@ -8,3 +8,4 @@ class Pessoa
 end
           pessoa = Pessoa.new
   puts  pessoa.falar
+  puts Pessoa.cumprimentar("good night")
