@@ -1,15 +1,16 @@
-class A
-  def  a
-    puts "geeks"
+class Caixa
+  def initialize(largura , altura)
+    @larg ,@alt = largura, altura
+  end
+  def total_area
+    @larg * @alt
   end
 end
-
-class B < A
-  def a
-    puts "Benvindo ao geeks for geeks"
+class CaixaGrande < Caixa
+  def total_area
+    @area = @larg *@alt
+    # puts " a Área da caixa grande éh: #@area metros "
   end
 end
-
-b = B.new
-puts b.a
-
+caixa = CaixaGrande.new(15,20)
+puts caixa.total_area(), "metros"
