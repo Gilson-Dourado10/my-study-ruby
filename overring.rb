@@ -9,7 +9,7 @@ end
 class CaixaGrande < Caixa
   def total_area
     @area = @larg *@alt
-    # puts " a Área da caixa grande éh: #@area metros "
+    puts " a Área da caixa grande éh: #@area metros "
   end
 end
 caixa = CaixaGrande.new(15,20)
