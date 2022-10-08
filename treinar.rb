@@ -1,15 +1,33 @@
-#Treinando exercism.io
-EXPECTED_MINUTES_IN_OVEN = 40
-class Lasagna
-  def remaining_minutes_in_oven(actual_minutes_in_oven)
-    EXPECTED_MINUTES_IN_OVEN - actual_minutes_in_oven
-  end
+module D
+      def initialize(nome)
+         @nome = nome
+       end
+       def to_s
+           @nome
+         end
+     end
+module Debug
+       include D
+      # Métodos que agem como perguntas
+       # geralmente são nomeados com um ? no final
+       def quem_sou_eu?
+           "#{self.class.nome} (\##{self.object_id}): #{self.to_s}"
+        end
+     end
 
-  def preparation_time_in_minutes(layers)
-    raise 'Please implement the Lasagna#preparation_time_in_minutes method'
-  end
+   class Phonograph
+  include Debug
+       # ...
+     end
 
-  def total_time_in_minutes(number_of_layers:, actual_minutes_in_oven:)
-    raise 'Please implement the Lasagna#total_time_in_minutes method'
-  end
-end
+   class EightTrack
+       include Debug
+       # ...
+     end
+
+   ph = Phonograph.new("West End Blues")
+   et = EightTrack.new("Real Pillow")
+   puts ph.quem_sou_eu?
+   puts et.quem_sou_eu?
+
+
