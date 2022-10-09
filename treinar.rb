@@ -1,33 +1,18 @@
-module D
-      def initialize(nome)
-         @nome = nome
-       end
-       def to_s
-           @nome
-         end
-     end
-module Debug
-       include D
-      # Métodos que agem como perguntas
-       # geralmente são nomeados com um ? no final
-       def quem_sou_eu?
-           "#{self.class.nome} (\##{self.object_id}): #{self.to_s}"
-        end
-     end
 
-   class Phonograph
-  include Debug
-       # ...
-     end
+module DecimalCode
+  RED = "rgb(255,0,0)"
+  GREEN = "rgb(0,128,0)"
 
-   class EightTrack
-       include Debug
-       # ...
-     end
+  def  code
+    return "Red : Decimal code #{RED}."
+  end
 
-   ph = Phonograph.new("West End Blues")
-   et = EightTrack.new("Real Pillow")
-   puts ph.quem_sou_eu?
-   puts et.quem_sou_eu?
+  def DecimalCode.code
+    return "Green: Decimal code #{GREEN}. "
+  end
 
+end
 
+puts(DecimalCode::RED)
+
+puts( DecimalCode.code )
