@@ -1,18 +1,9 @@
-
-module DecimalCode
-  RED = "rgb(255,0,0)"
-  GREEN = "rgb(0,128,0)"
-
-  def  code
-    return "Red : Decimal code #{RED}."
+class Foo
+  include Enumerable
+  def each
+    yield 1
+    yield 1, 2
+    yield
   end
-
-  def DecimalCode.code
-    return "Green: Decimal code #{GREEN}. "
-  end
-
 end
-
-puts(DecimalCode::RED)
-
-puts( DecimalCode.code )
+Foo.new.each_entry{ |element| p element }
