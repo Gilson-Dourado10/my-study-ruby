@@ -1,9 +1,12 @@
-class Foo
-  include Enumerable
-  def each
-    yield 1
-    yield 1, 2
-    yield
+fred = Module.new do
+  def meth1
+    "hello"
+  end
+  def meth2
+    "bye"
   end
 end
-Foo.new.each_entry{ |element| p element }
+a = "my string"
+puts a.extend(fred)   #=> "my string"
+puts a.meth1          #=> "hello"
+puts a.meth2          #=> "bye"
