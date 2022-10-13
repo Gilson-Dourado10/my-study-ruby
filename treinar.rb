@@ -1,12 +1,10 @@
-fred = Module.new do
-  def meth1
-    "hello"
-  end
-  def meth2
-    "bye"
-  end
-end
-a = "my string"
-puts a.extend(fred)   #=> "my string"
-puts a.meth1          #=> "hello"
-puts a.meth2          #=> "bye"
+
+
+d = Date.parse('3rd Feb 2001')
+p d
+p d.year
+p d.mon
+p d.mday
+p d.wday
+
+p d.strftime('%a %d %b %Y')
