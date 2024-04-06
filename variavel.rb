@@ -22,4 +22,5 @@ class Calculadora
     end
 end    
 puts Calculadora.subtracao(5,10) 
-puts Calculadora.soma(5,10)
+calculadora  = Calculadora.new
+puts calculadora.soma(5,10)
