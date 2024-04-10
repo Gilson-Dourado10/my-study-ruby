@@ -29,16 +29,17 @@ puts calculadora.soma(5,10)
 =end
 
 class Pessoa
-    def initialize(nome, idade)
+    def initialize(nome, idade, profissao)
       @nome = nome
       @idade = idade
+      @profissao = profissao
     end
     
     def apresentar
-      puts "Olá, meu nome é #{@nome} e tenho #{@idade} anos."
+      puts "Olá, meu nome é #{@nome} e tenho #{@idade} anos e trabalho como #{@profissao} "
     end
   end
   
-  pessoa = Pessoa.new("Ana", 25)
+  pessoa = Pessoa.new("Ana", 25,"Auxiliar de testes" )
   pessoa.apresentar
   
