@@ -33,13 +33,14 @@ class Pessoa
       @nome = nome
       @idade = idade
       @profissao = profissao
+      @cidade = cidade
     end
     
     def apresentar
-      puts "Olá, meu nome é #{@nome} e tenho #{@idade} anos e trabalho como #{@profissao} "
+      puts "Olá, meu nome é #{@nome} e tenho #{@idade} anos e trabalho como #{@profissao} e mora #{@cidade} "
     end
   end
   
-  pessoa = Pessoa.new("Ana", 25,"Auxiliar de testes" )
+  pessoa = Pessoa.new("Ana", 25,"Auxiliar de testes",  )
   pessoa.apresentar
   
