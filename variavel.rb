@@ -28,6 +28,7 @@ puts calculadora.soma(5,10)
 
 =end
 
+=begin
 class Pessoa
     def initialize(nome, idade, profissao)
       @nome = nome
@@ -43,4 +44,20 @@ class Pessoa
   
   pessoa = Pessoa.new("Ana", 25,"Auxiliar de testes",  )
   pessoa.apresentar
+=end
+ class Estudante
+  def initialize(nome , idade ,profissão)
+    @nome = nome
+    @idade = idade
+    @profissao = profissao
+  end
+  def info
+    puts ""
+  end  
+
+
+ end
+
+  
+
   
