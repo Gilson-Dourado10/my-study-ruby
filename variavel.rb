@@ -52,7 +52,7 @@ class Pessoa
     @profissao = profissao
   end
   def info
-    puts ""
+    puts "meu nome #{@nome} e tenho #{@idade} de idade e trabalho #{@profissao} "
   end  
 
 
