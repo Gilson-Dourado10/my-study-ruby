@@ -45,6 +45,7 @@ class Pessoa
   pessoa = Pessoa.new("Ana", 25,"Auxiliar de testes",  )
   pessoa.apresentar
 =end
+=begin
  class Estudante
   def initialize(nome , idade ,profissao, tempodetrabalho)
     @nome = nome
@@ -58,3 +59,17 @@ class Pessoa
 estudante = Estudante.new("George" ,30, "Engenheiro de software" , 10)
 estudante.info
 end
+=end
+
+class Animal
+  attr_accessor :nome
+  def initialize(nome)
+    @nome = nome
+    end
+  end
+animal = Animal.new("cachorro")  
+puts animal.nome
+animal.nome = "gato"
+puts animal.nome
+
+
