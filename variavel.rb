@@ -46,18 +46,15 @@ class Pessoa
   pessoa.apresentar
 =end
  class Estudante
-  def initialize(nome , idade ,profissao)
+  def initialize(nome , idade ,profissao, tempodetrabalho)
     @nome = nome
     @idade = idade
     @profissao = profissao
-  end
+    @tempodetrabalho = tempodetrabalho
   def info
-    puts "meu nome #{@nome} e tenho #{@idade} de idade e trabalho #{@profissao} "
+    puts "meu nome #{@nome} e tenho #{@idade} anos de idade e sou #{@profissao} e tenho #{@tempodetrabalho} anos experiêcia. "
   end  
  end
-estudante = Estudante.new("George" ,30, "Engenheiro de software")
+estudante = Estudante.new("George" ,30, "Engenheiro de software" , 10)
 estudante.info
-
-  
-
-  
+end
