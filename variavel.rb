@@ -61,6 +61,7 @@ estudante.info
 end
 =end
 
+=begin
 class Animal
   attr_accessor :nome
   def initialize(nome)
@@ -71,5 +72,16 @@ animal = Animal.new("cachorro")
 puts animal.nome
 animal.nome = "gato"
 puts animal.nome
+=end
+
+class Time
+  attr_reader :nomeTime
+  def initialize(nomeTime)
+    @nomeTime = nomeTime
+  end  
+end  
+time = Time.new("Palmeiras")
+puts time.nomeTime
+
 
 
