@@ -82,6 +82,8 @@ class Time
 end  
 time = Time.new("Palmeiras")
 puts time.nomeTime
+time.nomeTime = "Santos"
+puts time.nomeTime
 
 
 
