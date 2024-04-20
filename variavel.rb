@@ -93,7 +93,9 @@ class Pais
     @nome_pais = nome_pais
   end
 end  
-pais = Pais.new("Brail")
-puts pais.nome_pais
+pais = Pais.new("Brasil")
+#puts pais.nome_pais vai gerar um erro pq attr_writer só altera.
+pais.nome_pais = "Nova Zelândia"
+
 
 
