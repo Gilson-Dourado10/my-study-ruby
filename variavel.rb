@@ -74,6 +74,7 @@ animal.nome = "gato"
 puts animal.nome
 =end
 
+=begin
 class Time
   attr_reader :nomeTime
   def initialize(nomeTime)
@@ -84,6 +85,15 @@ time = Time.new("Palmeiras")
 puts time.nomeTime
 time.nomeTime = "Santos"
 puts time.nomeTime
+=end
 
+class Pais 
+  attr_writer :nome_pais
+  def initialize(nome_pais)
+    @nome_pais = nome_pais
+  end
+end  
+pais = Pais.new("Brail")
+puts pais.nome_pais
 
 
