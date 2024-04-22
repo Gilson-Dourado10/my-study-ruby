@@ -88,14 +88,17 @@ puts time.nomeTime
 =end
 
 class Pais 
-  attr_writer :nome_pais
-  def initialize(nome_pais)
+  attr_writer :nome_pais :nome_cidade
+  def initialize(nome_pais,nome_cidade)
     @nome_pais = nome_pais
+    @nome_cidade = nome_cidade
   end
 end  
-pais = Pais.new("Brasil")
+pais = Pais.new("Brasil","São Paulo")
+
 #puts pais.nome_pais vai gerar um erro pq attr_writer só altera.
 pais.nome_pais = "Nova Zelândia"
+pais.nome_cidade = "São Bernardo"
 
 
 
