@@ -86,7 +86,7 @@ puts time.nomeTime
 time.nomeTime = "Santos"
 puts time.nomeTime
 =end
-
+=begin
 class Pais 
   attr_writer :nome_pais, :nome_cidade
   def initialize(nome_pais,nome_cidade)
@@ -99,6 +99,13 @@ pais = Pais.new("Brasil","São Paulo")
 #puts pais.nome_pais vai gerar um erro pq attr_writer só altera.
 pais.nome_pais = "Nova Zelândia"
 pais.nome_cidade = "São Bernardo"
+=end
 
+idade = 18
+if idade < 18
+  puts "você é menor de idade"
+else 
+  puts "você é menor de idade"
+end  
 
 
