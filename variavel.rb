@@ -88,7 +88,7 @@ puts time.nomeTime
 =end
 
 class Pais 
-  attr_writer :nome_pais :nome_cidade
+  attr_writer :nome_pais, :nome_cidade
   def initialize(nome_pais,nome_cidade)
     @nome_pais = nome_pais
     @nome_cidade = nome_cidade
