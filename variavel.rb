@@ -101,9 +101,11 @@ pais.nome_pais = "Nova Zelândia"
 pais.nome_cidade = "São Bernardo"
 =end
 
-idade = 18
+idade = 17
 if idade < 18
   puts "você é menor de idade"
+  elsif idade > 16
+    puts "é adolescente"
 else 
   puts "você é menor de idade"
 end  
