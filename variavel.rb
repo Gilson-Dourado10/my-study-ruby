@@ -100,7 +100,7 @@ pais = Pais.new("Brasil","São Paulo")
 pais.nome_pais = "Nova Zelândia"
 pais.nome_cidade = "São Bernardo"
 =end
-
+=begin
 idade = 45
 if idade < 18
   puts "você é menor de idade"
@@ -109,5 +109,9 @@ if idade < 18
 else 
   puts "já esta com idade avançada"
 end  
+=end
+for i in 0..10 
+  puts "Interação: #{i}"
+end
 
 
