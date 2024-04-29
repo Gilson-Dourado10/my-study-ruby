@@ -116,8 +116,25 @@ for i in 0..10
   puts "Interação: #{i}"
 end
 =end
+=begin
 for i in 5..10
   puts "interação: #{i}"
 end
+=end
+
+=begin 
+ Usando o método downto em um número
+10.downto(1) do |i|
+  puts i
+end
+=end
+
+
+
+20.downto(2) do |i|
+  puts i
+    
+end  
+    
 
 
