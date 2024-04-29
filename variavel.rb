@@ -110,8 +110,14 @@ else
   puts "já esta com idade avançada"
 end  
 =end
+
+=begin
 for i in 0..10 
   puts "Interação: #{i}"
+end
+=end
+for i in 5..10
+  puts "interação: #{i}"
 end
 
 
