@@ -130,11 +130,17 @@ end
 =end
 
 
-
+=begin
 20.downto(2) do |i|
   puts i
     
 end  
-    
+=end
+
+cont = 0
+while 
+  cont < 7
+  cont += 1
+end
 
 
