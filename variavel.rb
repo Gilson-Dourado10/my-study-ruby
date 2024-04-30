@@ -140,7 +140,9 @@ end
 cont = 0
 while 
   cont < 7
+  puts " Contador: #{cont}"
   cont += 1
+  
 end
 
 
