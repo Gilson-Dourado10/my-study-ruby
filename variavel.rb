@@ -137,6 +137,7 @@ end
 end  
 =end
 
+=begin
 cont = 0
 while 
   cont < 7
@@ -144,5 +145,9 @@ while
   cont += 1
   
 end
+=end
 
-
+ frutas = ["maça","pera","laranja","uva"] 
+ for  fruta in frutas
+  puts "eu gosto de #{fruta}."
+ end
