@@ -147,7 +147,15 @@ while
 end
 =end
 
+=begin
  frutas = ["maça","pera","laranja","uva"] 
  for  fruta in frutas
   puts "eu gosto de #{fruta}."
  end
+=end
+
+ frutas = ["maça","pera","laranja","uva"] 
+ frutas.each do |fruta|
+  puts "eu gosto de fruta #{fruta}"
+ end
+  
