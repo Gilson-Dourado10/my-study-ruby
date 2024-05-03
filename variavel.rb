@@ -154,8 +154,29 @@ end
  end
 =end
 
+=begin
  frutas = ["maça","pera","laranja","uva"] 
  frutas.each do |fruta|
   puts "eu gosto de fruta #{fruta}"
  end
-  
+=end
+ 
+ meu_array = [10,20,30,"Adão",true,nil]
+  puts meu_array[4] 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
