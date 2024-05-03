@@ -162,7 +162,10 @@ end
 =end
  
  meu_array = [10,20,30,"Adão",true,nil]
-  puts meu_array[4] 
+  #puts meu_array[5] 
+  meu_array.each{ |array|
+  puts array
+  }
  
 
 
