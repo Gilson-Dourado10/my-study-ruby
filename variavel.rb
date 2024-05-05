@@ -161,11 +161,22 @@ end
  end
 =end
  
+=begin
  meu_array = [10,20,30,"Adão",true,nil]
   meu_array.each{ |array|
   puts array
   }
- 
+=end
+
+ linguagens = ['Português', 'Inglês', 'Ruby']
+
+linguagens.each do |ling|
+  puts 'Eu adoro ' + ling + '!'
+  puts 'Você não?'
+end
+
+puts 'E vamos ouví-lo sobre C++!'
+puts '...'
 
 
 
