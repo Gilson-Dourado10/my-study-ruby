@@ -178,6 +178,7 @@ end
 puts 'E vamos ouví-lo sobre C++!'
 puts '...'
 =end
+=begin
 nomes = ['Ana', 'Maria', 'Cris']
 
 puts nomes
@@ -185,7 +186,12 @@ puts nomes[0]
 puts nomes[1]
 puts nomes[2]
 puts nomes[3] 
+=end
 
+1.times do
+  puts "JESUS SALVA"
+  puts "É O UNICO SALVADOR"
+end
 
 
 
