@@ -167,7 +167,7 @@ end
   puts array
   }
 =end
-
+=begin
  linguagens = ['Português', 'Inglês', 'Ruby']
 
 linguagens.each do |ling|
@@ -177,7 +177,14 @@ end
 
 puts 'E vamos ouví-lo sobre C++!'
 puts '...'
+=end
+nomes = ['Ana', 'Maria', 'Cris']
 
+puts nomes
+puts nomes[0]
+puts nomes[1]
+puts nomes[2]
+puts nomes[3] 
 
 
 
