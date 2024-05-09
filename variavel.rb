@@ -232,6 +232,10 @@ puts Calculadora.subtracao(10, 7)  # Saída: 3
 meu_hash = {}
 puts meu_hash
 
+meu_hash["nome"] = "Pedro"
+meu_hash["idade"] = 40
+meu_hash["cidade"] = "São paulo"
+puts meu_hash
 
 
 
