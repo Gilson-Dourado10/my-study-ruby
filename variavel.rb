@@ -213,6 +213,7 @@ colorHash.each do |codeType, color|
   puts codeType + ':  ' + color
 end
 =end
+=begin
 class Calculadora
   def self.soma(a, b)
     a + b
@@ -226,7 +227,10 @@ end
 # Chamando métodos de classe
 puts Calculadora.soma(5, 3)       # Saída: 8
 puts Calculadora.subtracao(10, 7)  # Saída: 3
+=end
 
+meu_hash = {}
+puts meu_hash
 
 
 
