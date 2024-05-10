@@ -229,6 +229,7 @@ puts Calculadora.soma(5, 3)       # Saída: 8
 puts Calculadora.subtracao(10, 7)  # Saída: 3
 =end
 
+=begin
 meu_hash = {}
 puts meu_hash
 
@@ -236,8 +237,9 @@ meu_hash["nome"] = "Pedro"
 meu_hash["idade"] = 40
 meu_hash["cidade"] = "São paulo"
 puts meu_hash
-
-
+=end
+outro_hash = {"nome" => "Joao", "idade" => 30, "cidade" => "Curitiba"} 
+puts outro_hash
 
 
 
