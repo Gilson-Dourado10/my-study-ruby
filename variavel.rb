@@ -252,10 +252,14 @@ puts meu_hash["nome"]
 puts meu_hash["idade"]
 puts meu_hash["cidade"]
 =end
+=begin
 outro_hash = {"nome" => "Joao", "idade" => 30, "cidade" => "Curitiba"} 
 outro_hash.each do |chave , valor|
   puts "A chave '#{chave}' tem o valor '#{valor}' "
 end
+=end
+
+hash_torcida = {"time" =>"Palmeiras" , "torcedor" => "Pedro" ,"nome_torcida_organizada" => "Mancha verde"}
 
 
 
