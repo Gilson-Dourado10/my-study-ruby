@@ -260,6 +260,9 @@ end
 =end
 
 hash_torcida = {"time" =>"Palmeiras" , "torcedor" => "Pedro" ,"nome_torcida_organizada" => "Mancha verde"}
+hash_torcida.each do |key , value|
+  puts " #{key}: #{value}"
+end
 
 
 
