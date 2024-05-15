@@ -259,11 +259,20 @@ outro_hash.each do |chave , valor|
 end
 =end
 
+=begin
 hash_torcida = {"time" =>"Palmeiras" , "torcedor" => "Pedro" ,"nome_torcida_organizada" => "Mancha verde"}
 hash_torcida.each do |key , value|
   puts " #{key}: #{value}"
 end
+=end
 
+class Pessoa
+  def self.info
+    puts 'é o método de classe'
+  end
+end
+Pessoa.info
+  
 
 
 
