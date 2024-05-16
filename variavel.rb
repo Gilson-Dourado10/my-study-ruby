@@ -279,7 +279,8 @@ class Pessoa
     puts "Hello!!! Eu sou #{self}"
   end  
 end  
-
+pessoa = Pessoa.new
+pessoa.saudacao
 
 
 
