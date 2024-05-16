@@ -266,13 +266,21 @@ hash_torcida.each do |key , value|
 end
 =end
 
+=begin
 class Pessoa
   def self.info
     puts 'é o método de classe'
   end
 end
 Pessoa.info
-  
+=end
+class Pessoa
+  def saudacao
+    puts "Hello!!! Eu sou #{self}"
+  end  
+end  
+
+
 
 
 
