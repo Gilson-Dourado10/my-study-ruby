@@ -299,7 +299,7 @@ end
 # Chamando métodos de classe
 puts Calculadora.soma(5, 3)       # Saída: 8
 puts Calculadora.subtracao(10, 7)  # Saída: 3
-
+puts Calculadora.mult(10, 7)
 
 
 
