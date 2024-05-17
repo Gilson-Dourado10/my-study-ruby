@@ -274,6 +274,7 @@ class Pessoa
 end
 Pessoa.info
 =end
+=begin
 class Pessoa
   def saudacao
     puts "Hello!!! Eu sou #{self}"
@@ -281,6 +282,23 @@ class Pessoa
 end  
 pessoa = Pessoa.new
 pessoa.saudacao
+=end
+class Calculadora
+  def self.soma(a, b)
+    a + b
+  end
+  
+  def self.subtracao(a, b)
+    a - b
+  end
+  def self.mult(a,b)
+    a * b
+  end
+end
+
+# Chamando métodos de classe
+puts Calculadora.soma(5, 3)       # Saída: 8
+puts Calculadora.subtracao(10, 7)  # Saída: 3
 
 
 
