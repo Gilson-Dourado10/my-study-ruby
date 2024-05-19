@@ -294,12 +294,20 @@ class Calculadora
   def self.mult(a,b)
     a * b
   end
+  def self.div(a,b)
+    if b=0
+      "divisão por zero não é permitido"
+    else
+      a / b.to.f
+    end
+  end
 end
 
 # Chamando métodos de classe
 puts Calculadora.soma(5, 3)       # Saída: 8
 puts Calculadora.subtracao(10, 7)  # Saída: 3
 puts Calculadora.mult(10, 7)
+puts calculadora.div(20,2)
 
 
 
