@@ -291,18 +291,20 @@ class Calculadora
   def self.subtracao(a, b)
     a - b
   end
+
   def self.mult(a,b)
     a * b
   end
+
   def self.div(a,b)
     if b==0
       "divisão por zero não é permitido"
     else
       a / b.to_f
-    end
-    def self.potenciacao(a,b)
+  end
+end
+  def self.potenciacao(a,b)
       a ** b
-    end
   end
 end
 
@@ -311,7 +313,7 @@ puts Calculadora.soma(5, 3)       # Saída: 8
 puts Calculadora.subtracao(10, 7)  # Saída: 3
 puts Calculadora.mult(10, 7)
 puts  Calculadora.div(20,2)
-puts Calculadora.potenciacao
+puts Calculadora.potenciacao(2,3)
 
 
 
