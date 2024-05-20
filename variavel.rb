@@ -300,6 +300,9 @@ class Calculadora
     else
       a / b.to_f
     end
+    def self.potenciacao(a,b)
+      a ** b
+    end
   end
 end
 
@@ -308,6 +311,7 @@ puts Calculadora.soma(5, 3)       # Saída: 8
 puts Calculadora.subtracao(10, 7)  # Saída: 3
 puts Calculadora.mult(10, 7)
 puts  Calculadora.div(20,2)
+puts Calculadora.potenciacao
 
 
 
