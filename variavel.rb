@@ -316,9 +316,13 @@ puts Calculadora.mult(10, 7)
 puts  Calculadora.div(20,2)
 puts Calculadora.potenciacao(2,3)
 =end
+
+puts "Qual é o seu nome?"
 nome = "pedro"
 idade = 45
+puts "Qual a sua idade?"
 profissao = "Mecanico"
+puts"qual a sua profissão"
 puts "Hello #{nome} voce tem #{idade} anos e trabalha de #{profissao}"
 
 
