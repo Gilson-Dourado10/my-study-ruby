@@ -318,7 +318,8 @@ puts Calculadora.potenciacao(2,3)
 =end
 nome = "pedro"
 idade = 45
-puts "Hello #{nome} voce tem #{idade}"
+profissao = "Mecanico"
+puts "Hello #{nome} voce tem #{idade} anos e trabalha de #{profissao}"
 
 
 
