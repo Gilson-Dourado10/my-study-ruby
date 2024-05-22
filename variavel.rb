@@ -283,6 +283,7 @@ end
 pessoa = Pessoa.new
 pessoa.saudacao
 =end
+=begin
 class Calculadora
   def self.soma(a, b)
     a + b
@@ -314,7 +315,10 @@ puts Calculadora.subtracao(10, 7)  # Saída: 3
 puts Calculadora.mult(10, 7)
 puts  Calculadora.div(20,2)
 puts Calculadora.potenciacao(2,3)
-
+=end
+nome = "pedro"
+idade = 45
+puts "Hello #{nome} voce tem #{idade}"
 
 
 
