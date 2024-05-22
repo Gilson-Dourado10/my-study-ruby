@@ -318,11 +318,11 @@ puts Calculadora.potenciacao(2,3)
 =end
 
 puts "Qual é o seu nome?"
-nome = "pedro"
-idade = 45
-puts "Qual a sua idade?"
-profissao = "Mecanico"
+nome = gets.chomp
+puts"Qual sua idade?"
+idade = gets.chomp.to_i
 puts"qual a sua profissão"
+profissao = gets.chomp
 puts "Hello #{nome} voce tem #{idade} anos e trabalha de #{profissao}"
 
 
