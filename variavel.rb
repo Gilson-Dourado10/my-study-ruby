@@ -326,7 +326,7 @@ profissao = gets.chomp
 puts "você mora em que em que pais"
 pais = gets.chomp
 
-puts "Hello #{nome} voce tem #{idade} anos e trabalha de #{profissao}"
+puts "Hello #{nome} voce tem #{idade} anos e trabalha de #{profissao} e mora no #{pais}"
 
 
 
