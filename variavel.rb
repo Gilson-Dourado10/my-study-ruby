@@ -323,6 +323,9 @@ puts"Qual sua idade?"
 idade = gets.chomp.to_i
 puts"qual a sua profissão"
 profissao = gets.chomp
+puts "você mora em que em que pais"
+pais = gets.chomp
+
 puts "Hello #{nome} voce tem #{idade} anos e trabalha de #{profissao}"
 
 
