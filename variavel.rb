@@ -339,6 +339,10 @@ subtracao = x - y
 mult= x * y
 divisao = x / y
 
+puts soma
+puts subtracao
+puts mult
+puts divisao
 
 
 
