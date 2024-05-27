@@ -316,7 +316,7 @@ puts Calculadora.mult(10, 7)
 puts  Calculadora.div(20,2)
 puts Calculadora.potenciacao(2,3)
 =end
-
+=begin
 puts "Qual é o seu nome?"
 nome = gets.chomp
 puts"Qual sua idade?"
@@ -327,7 +327,13 @@ puts "você mora em que em que pais"
 pais = gets.chomp
 
 puts "Hello #{nome} voce tem #{idade} anos e trabalha de #{profissao} e mora no #{pais}"
+=end
 
+puts "insira m número"
+ x = gets.chomp.to_i
+puts "insira outro número"
+y= gets.chomp.to_i
+ 
 
 
 
