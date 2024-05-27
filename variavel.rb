@@ -333,7 +333,11 @@ puts "insira m número"
  x = gets.chomp.to_i
 puts "insira outro número"
 y= gets.chomp.to_i
- 
+
+soma = x + y
+subtracao = x - y
+mult= x * y
+divisao = x / y
 
 
 
