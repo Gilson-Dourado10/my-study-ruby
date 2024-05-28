@@ -342,7 +342,7 @@ divisao = x / y
 puts soma
 puts subtracao
 puts mult
-puts divisao
+puts divisao.to_f
 
 
 
