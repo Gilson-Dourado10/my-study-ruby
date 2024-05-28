@@ -337,12 +337,12 @@ y= gets.chomp.to_i
 soma = x + y
 subtracao = x - y
 mult= x * y
-divisao = x / y
+divisao = x.to_f / y.to_f
 
 puts soma
 puts subtracao
 puts mult
-puts divisao.to_f
+puts divisao
 
 
 
